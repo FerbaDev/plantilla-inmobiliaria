@@ -78,7 +78,47 @@ a:hover {
   text-align: center;
   text-decoration: none;
 }
+/****** QUIENES SOMOS **********/
+.quienes-somos-container {
+  padding: 20px;
+  background-color: var(--clr-background);
+  color: aliceblue;
+}
+.quienes-somos-pic {
+  width: 100%;
+}
 
+.quienes-somos-pic img {
+  width: 100%;
+}
+.quienes-somos-card {
+  padding-block: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.quienes-somos-text {
+  color: #dddddd;
+}
+.quienes-somos-text h2 {
+  padding-block: 10px;
+  font-size: 1.8em;
+}
+.quienes-somos-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.icons-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.icons-box i {
+  font-size: 3em;
+}
 /******************************************************************************************/
 /*****************************************************************************************/
 /**************** media queries ********************/
