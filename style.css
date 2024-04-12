@@ -89,7 +89,6 @@ a:hover {
 .quienes-somos-pic {
   width: 100%;
 }
-
 .quienes-somos-pic img {
   width: 100%;
 }
@@ -125,6 +124,29 @@ a:hover {
 }
 .icons-box i {
   font-size: 3em;
+}
+/****** QUIENES SOMOS **********/
+.propiedades-container {
+  padding: 20px;
+}
+.propiedades-title {
+  padding-block: 10px;
+  font-size: 1.8em;
+}
+.propiedades-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.propiedades-card {
+  background-color: var(--clr-background);
+  color: aliceblue;
+}
+.propiedades-img {
+  width: 100%;
+}
+.propiedades-card-info {
+  height: 100px;
 }
 /******************************************************************************************/
 /*****************************************************************************************/
@@ -250,6 +272,25 @@ a:hover {
   }
   .icons-box i {
     font-size: 3em;
+  }
+  /****** QUIENES SOMOS **********/
+  .propiedades-container {
+    padding: 50px;
+  }
+  .propiedades-title {
+    padding-block: 10px;
+    font-size: 1.8em;
+    padding-block: 20px;
+  }
+  .propiedades-cards {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .propiedades-card {
+    width: 30%;
+  }
+  .propiedades-card-info {
+    height: 150px;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
