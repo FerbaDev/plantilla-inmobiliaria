@@ -54,7 +54,7 @@ a:hover {
   background-image: url("/images/balcones.png");
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,6 +83,8 @@ a:hover {
   padding: 20px;
   background-color: var(--clr-background);
   color: aliceblue;
+  display: flex;
+  flex-direction: column;
 }
 .quienes-somos-pic {
   width: 100%;
@@ -103,6 +105,11 @@ a:hover {
 .quienes-somos-text h2 {
   padding-block: 10px;
   font-size: 1.8em;
+  border-bottom: 1px solid #dddddd;
+}
+.quienes-somos-text p {
+  font-size: 1.2em;
+  padding-top: 1em;
 }
 .quienes-somos-icons {
   display: flex;
@@ -192,6 +199,7 @@ a:hover {
   }
   /****** HERO **********/
   .hero {
+    height: 90vh;
     align-items: flex-end;
     color: aliceblue;
     padding: 20px;
@@ -201,8 +209,11 @@ a:hover {
     width: 50%;
   }
   .hero-card-text h1 {
-    font-size: 3em;
+    font-size: 4em;
     text-wrap: balance;
+  }
+  .hero-card-text p {
+    font-size: 1.5em;
   }
   .button-container {
     width: 50%;
@@ -212,6 +223,33 @@ a:hover {
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
+  }
+  /****** QUIENES SOMOS **********/
+  .quienes-somos-container {
+    padding: 0;
+    flex-direction: row;
+  }
+  .quienes-somos-pic {
+    width: 50%;
+  }
+  .quienes-somos-card {
+    padding: 50px;
+    justify-content: space-around;
+  }
+  .quienes-somos-text {
+    color: #dddddd;
+    width: 80%;
+  }
+  .quienes-somos-text h2 {
+    padding-block: 10px;
+    font-size: 3em;
+  }
+  .icons-box {
+    justify-content: space-around;
+    width: 70%;
+  }
+  .icons-box i {
+    font-size: 3em;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
