@@ -152,6 +152,21 @@ header {
   width: 100%;
   height: 250px;
 }
+.propiedades-img-1 {
+  background-image: url("./images/office.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.propiedades-img-2 {
+  background-image: url("./images/lobby.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+.propiedades-img-3 {
+  background-image: url("./images/building.jpg");
+  background-position: center;
+  background-size: cover;
+}
 .propiedades-card-info {
   padding: 10px;
   display: flex;
