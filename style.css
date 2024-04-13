@@ -10,15 +10,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-/****** HEADER **********/
-header {
-  max-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-inline: 20px;
-  background-color: var(--clr-background);
-  height: 10vh;
+.btn {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+
+}
+.btn-container {
+  margin-top: 16px;
 }
 a {
   color: inherit;
@@ -26,6 +26,16 @@ a {
 }
 a:hover {
   transform: scale(1.1);
+}
+/****** HEADER **********/
+header {  
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  background-color: var(--clr-background);
+  height: 10vh;
 }
 .logo {
   color: rgb(255, 255, 255);
@@ -71,12 +81,6 @@ a:hover {
 .hero-card-text h1 {
   font-size: 2.5em;
   text-wrap: balance;
-}
-.hero a {
-  border: 2px solid rgb(255, 255, 255);
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
 }
 /****** QUIENES SOMOS **********/
 .quienes-somos-container {
@@ -158,6 +162,26 @@ a:hover {
 .propiedades-card-info h3 {
   font-weight: bold;
 }
+/****** MANEJO DE PROPIEDADES **********/
+.manejo-prop-container {
+  background-color: var(--clr-background);
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 2em;
+}
+.manejo-prop-ifo {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  min-height: 200px;
+}
+.manejo-prop-ifo h3 {
+  font-size: 2em;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #dddddd;
+}
 /******************************************************************************************/
 /*****************************************************************************************/
 /**************** media queries ********************/
@@ -229,7 +253,7 @@ a:hover {
   header {
     padding-left: 50px;
   }
-  /****** HERO **********/
+  /****** HERO laptop **********/
   .hero {
     height: 90vh;
     align-items: flex-end;
@@ -242,7 +266,7 @@ a:hover {
   }
   .hero-card-text h1 {
     font-size: 4em;
-    text-wrap: balance;
+
   }
   .hero-card-text p {
     font-size: 1.5em;
@@ -250,13 +274,8 @@ a:hover {
   .button-container {
     width: 50%;
   }
-  .hero a {
-    border: 2px solid rgb(255, 255, 255);
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-  }
-  /****** QUIENES SOMOS **********/
+
+  /****** QUIENES SOMOS laptop **********/
   .quienes-somos-container {
     padding: 0;
     flex-direction: row;
@@ -283,7 +302,7 @@ a:hover {
   .icons-box i {
     font-size: 3em;
   }
-  /****** PROPIEDADES **********/
+  /****** PROPIEDADES laptop **********/
   .propiedades-container {
     padding: 50px;
   }
@@ -302,6 +321,30 @@ a:hover {
   .propiedades-card-info {
     padding: 10px;
   }
+  /****** MAEJO DE PROPIEDADES **********/
+.manejo-prop-container {
+  flex-direction: row;
+  padding: 0;
+}
+.manejo-prop-ifo {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.manejo-prop-ifo h3 {
+  font-size: 3em;
+  width: 80%;
+}
+.manejo-prop-ifo p {
+  font-size: 1.17em;
+  width: 80%;
+}
+.btn-container {
+  width: 80%;
+}
+.manejo-prop-img {
+  width: 50%;
+}
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
