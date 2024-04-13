@@ -91,10 +91,10 @@ header {
   flex-direction: column;
 }
 .quienes-somos-pic {
-  width: 100%;
-}
-.quienes-somos-pic img {
-  width: 100%;
+  background-image: url("./images/quienes-somos.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
 }
 .quienes-somos-card {
   padding-block: 20px;
@@ -178,9 +178,43 @@ header {
   min-height: 200px;
 }
 .manejo-prop-ifo h3 {
-  font-size: 2em;
+  font-size: 1.8em;
   padding-bottom: 16px;
   border-bottom: 1px solid #dddddd;
+}
+/****** TRABAJE CON NOSOTROS **********/
+.trabaje-nosotros-container {
+  background-image: url("./images/trabaje-con-nosotros.png");
+  color: aliceblue;
+  padding: 50px 20px;
+}
+.trabaje-nosotros-title {
+  font-size: 1.8em;
+  padding-block: 16px;
+  border-bottom: 1px solid #dddddd;
+  text-wrap: balance;
+}
+.trabaje-nosotros-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 36px;
+  gap: 1em;
+}
+.trabaje-nosotros-card {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #dddddd;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.trabaje-nosotros-card h3 {
+  font-size: 1.7em;
+}
+.trabaje-nosotros-card p {
+  text-align: center;
 }
 /******************************************************************************************/
 /*****************************************************************************************/
@@ -279,9 +313,11 @@ header {
   .quienes-somos-container {
     padding: 0;
     flex-direction: row;
+    height: 450px;
   }
   .quienes-somos-pic {
     width: 50%;
+    height: 100%;
   }
   .quienes-somos-card {
     padding: 50px;
@@ -308,7 +344,7 @@ header {
   }
   .propiedades-title {
     padding-block: 10px;
-    font-size: 2em;
+    font-size: 3em;
     padding-block: 20px;
   }
   .propiedades-cards {
@@ -321,7 +357,7 @@ header {
   .propiedades-card-info {
     padding: 10px;
   }
-  /****** MAEJO DE PROPIEDADES **********/
+  /****** MAEJO DE PROPIEDADES laptop **********/
 .manejo-prop-container {
   flex-direction: row;
   padding: 0;
@@ -344,6 +380,35 @@ header {
 }
 .manejo-prop-img {
   width: 50%;
+}
+/****** TRABAJE CON NOSOTROS laptop **********/
+.trabaje-nosotros-container {
+  padding: 70px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trabaje-nosotros-title {
+  font-size: 3em;
+  width: 80%;
+  border-bottom: 2px solid #dddddd;
+}
+.trabaje-nosotros-cards-container {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+.trabaje-nosotros-card {
+  width: 250px;
+  height: 250px;
+  border: 2px solid #dddddd;
+}
+.trabaje-nosotros-card h3 {
+  font-size: 2em;
+}
+.trabaje-nosotros-card p {
+  width: 75%;
+  font-size: 1.2em;
 }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
